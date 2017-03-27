@@ -35,15 +35,21 @@ FORMAT: 1A
 + Response 200 (application/json)
 
     + Attributes
-        + user (required)
+        + user (required) -- コメント
             + name: wada (string, required)
             + age: 18 (number, required)
             + state: 0 (enum, required) - ユーザ種別(0:仮登録, 1:登録完了)
                 + 0 (number)
                 + 1 (number)
-            + profile (object, required) -- (8)
-            + registered: `2017-03-24T01:23:45Z` (string, required)  -- (9)
-        + loginHistory (array) -- (11)
+            + profile (object, required)
+            + registered: `2017-03-24T01:23:45Z` (string, required)
+        + loginHistory (array)
             + (object)
                 + login_ts: `2017-03-24T01:23:45Z` (string, required)
                 + user_agent: `Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)` (string, optional)
+
++ Response 404 (application/json)
+
+    + Attributes
+        + error_code: not found user(string, required)
+
