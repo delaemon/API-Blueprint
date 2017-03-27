@@ -45,6 +45,19 @@ FORMAT: 1A
                 + favorite: jazz(string, optional)
             + registered: `2017-03-24T01:23:45Z` (string, required)
 
+### ユーザー削除 [DELETE]
+#### 概要
+* ユーザー情報を削除
++ Request (application/json)
+    + Headers
+
+            Accept: application/json
+
+    + Attributes
+        + user_id: 1 (number, required) - ユーザID
+
++ Response 204 (application/json)
+
 ## ユーザ情報取得 [/v1/users/{user_id}/{?pii,master}]
 ### ユーザ情報取得API [GET]
 #### 概要
