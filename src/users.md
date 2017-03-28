@@ -67,14 +67,17 @@ FORMAT: 1A
 + Parameters
 
     + user_id: 1 (number, required) - ユーザID
-    + pii: false (bool, optional) - ユーザのメールアドレス
-    + master: false (bool, optional) - マスターDB参照
+    + pii: true (bool, optional) - ユーザのメールアドレス
+        + Default: false
+    + master: true (bool, optional) - マスターDB参照
+        + Default: false
 
 + Response 200 (application/json)
 
     + Attributes
         + user (required) -- コメント
             + name: onodera (string, required)
+                + Default: "No name"
             + age: 18 (number, required)
             + state: 0 (enum, required) - ユーザ種別(0:仮登録, 1:登録完了)
                 + 0 (number)
