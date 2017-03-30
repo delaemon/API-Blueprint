@@ -6,5 +6,5 @@
 
 ./bin/convert.sh
 
-./node_modules/api-mock/bin/api-mock.js api.md --port 3000
+./node_modules/api-mock/bin/api-mock.js src/api.md --port 3000
 ```
