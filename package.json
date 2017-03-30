@@ -9,6 +9,7 @@
   "author": "Takeshi Onodera",
   "license": "MIT",
   "dependencies": {
-    "aglio": "2.3.0"
+    "aglio": "2.3.0",
+    "api-mock": "0.3.2"
   }
 }
